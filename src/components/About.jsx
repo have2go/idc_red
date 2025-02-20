@@ -1,7 +1,7 @@
 export default function About() {
     return (
         <section id="about" className="w-full max-w-[1200px] flex flex-col mx-auto pt-12 pb-16 text-lg">
-            <h2 className="text-[#0095DA] text-3xl font-bold mb-6">О центре</h2>
+            <h2 className="text-[#ee1c25] text-3xl font-bold mb-6">О центре</h2>
             <p className="mb-4">
                 Инициатива открытия Информационного делового центра Санкт-Петербурга в Наньнин принадлежит администрации
                 города Санкт-Петербурга, и она направлена на укрепление деловых связей с Китаем по ряду направлений.
@@ -13,25 +13,25 @@ export default function About() {
             </p>
             <ul className="list-none space-y-2 px-10">
                 <li className="relative pl-6">
-                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#0095DA] "></span>
+                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#ee1c25] "></span>
                     Выстраивание межправительственного взаимодействия, партнерских и деловых отношений между
                     правительством Санкт-Петербурга и Органами мес тного управления Провинций Китая
                 </li>
                 <li className="relative pl-6">
-                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#0095DA] "></span>
+                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#ee1c25] "></span>
                     Организация обоюдных деловых встреч, поездок
                 </li>
                 <li className="relative pl-6">
-                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#0095DA]"></span>
+                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#ee1c25]"></span>
                     Организация взаимодействия отраслевых предприятия России и Китая
                 </li>
                 <li className="relative pl-6">
-                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#0095DA] "></span>
+                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#ee1c25] "></span>
                     Организация встреч видов бизнеса двух стран, расширение торговли, установление более глубоких
                     бизнес-связей, культурных связей
                 </li>
                 <li className="relative pl-6">
-                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#0095DA] "></span>
+                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#ee1c25] "></span>
                     Представление инвестиционно-привлекательных проектов города Санкт-Петербурга для Китайских
                     инвесторов и партнеров. Поддержку и сопровождение проектов.
                 </li>

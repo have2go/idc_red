@@ -10,7 +10,7 @@ export default function Popup({ city, theme, onClose }) {
                 className="bg-white pt-6 pb-10 px-10 rounded-lg shadow-lg max-w-[700px] text-center relative text-black"
                 onClick={e => e.stopPropagation()}
             >
-                <h3 className="text-2xl font-bold mb-6 text-[#0095DA]">{theme}</h3>
+                <h3 className="text-2xl font-bold mb-6 text-[#ee1c25]">{theme}</h3>
                 <div className="flex flex-col text-left gap-3 text-lg">{content}</div> {/* Отображаем JSX-элемент */}
                 <button
                     onClick={onClose}

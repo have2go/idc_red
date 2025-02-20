@@ -9,19 +9,19 @@ export const spb = {
             <p>Ключевые моменты истории:</p>
             <ul className="list-none space-y-2 px-4">
                 <li className="relative pl-6">
-                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#0095DA]"></span>В 1712 году Санкт-Петербург
+                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#ee1c25]"></span>В 1712 году Санкт-Петербург
                     стал официальной столицей России.
                 </li>
                 <li className="relative pl-6">
-                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#0095DA]"></span>В 1914 году, с началом
+                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#ee1c25]"></span>В 1914 году, с началом
                     Первой мировой войны, город переименовали в "Петроград".
                 </li>
                 <li className="relative pl-6">
-                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#0095DA]"></span>В 1924 году, после смерти
+                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#ee1c25]"></span>В 1924 году, после смерти
                     Владимира Ленина, город получил название "Ленинград".
                 </li>
                 <li className="relative pl-6">
-                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#0095DA]"></span>В 1991 году, после
+                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#ee1c25]"></span>В 1991 году, после
                     референдума, город вернул свое историческое имя — Санкт-Петербург.
                 </li>
             </ul>
@@ -52,12 +52,12 @@ export const spb = {
             <p>Основные показатели:</p>
             <ul className="list-none space-y-2 px-4">
                 <li className="relative pl-6">
-                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#0095DA]"></span>
+                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#ee1c25]"></span>
                     Порт Санкт-Петербурга — один из крупнейших портов России, обеспечивающий торговлю с Европой и
                     другими регионами.
                 </li>
                 <li className="relative pl-6">
-                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#0095DA]"></span>
+                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#ee1c25]"></span>
                     Город является центром финансовой деятельности, где расположены офисы крупнейших банков и компаний.
                 </li>
             </ul>
@@ -72,15 +72,15 @@ export const spb = {
             <p>Главные культурные объекты:</p>
             <ul className="list-none space-y-2 px-4">
                 <li className="relative pl-6">
-                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#0095DA]"></span>
+                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#ee1c25]"></span>
                     Эрмитаж — один из крупнейших музеев мира, хранящий более трех миллионов произведений искусства.
                 </li>
                 <li className="relative pl-6">
-                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#0095DA]"></span>
+                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#ee1c25]"></span>
                     Мариинский театр — легендарная сцена оперы и балета.
                 </li>
                 <li className="relative pl-6">
-                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#0095DA]"></span>
+                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#ee1c25]"></span>
                     Исаакиевский собор и Петропавловская крепость — символы города.
                 </li>
             </ul>
@@ -95,19 +95,19 @@ export const spb = {
             <p>Популярные места:</p>
             <ul className="list-none space-y-2 px-4">
                 <li className="relative pl-6">
-                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#0095DA]"></span>
+                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#ee1c25]"></span>
                     Дворцовая площадь и Зимний дворец .
                 </li>
                 <li className="relative pl-6">
-                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#0095DA]"></span>
+                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#ee1c25]"></span>
                     Разводные мосты через Неву.
                 </li>
                 <li className="relative pl-6">
-                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#0095DA]"></span>
+                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#ee1c25]"></span>
                     Петергоф — роскошный дворцово-парковый ансамбль.
                 </li>
                 <li className="relative pl-6">
-                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#0095DA]"></span>
+                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#ee1c25]"></span>
                     Царское Село с Екатерининским дворцом и Янтарной комнатой.
                 </li>
             </ul>
@@ -126,15 +126,15 @@ export const spb = {
             <p>Транспортная система города включает:</p>
             <ul className="list-none space-y-2 px-4">
                 <li className="relative pl-6">
-                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#0095DA]"></span>
+                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#ee1c25]"></span>
                     Разветвленную сеть метро, которая насчитывает 5 линий.
                 </li>
                 <li className="relative pl-6">
-                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#0095DA]"></span>
+                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#ee1c25]"></span>
                     Международный аэропорт "Пулково", обслуживающий более 20 миллионов пассажиров в год.
                 </li>
                 <li className="relative pl-6">
-                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#0095DA]"></span>
+                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#ee1c25]"></span>
                     Железнодорожные вокзалы, такие как Московский, Витебский и Финляндский, обеспечивающие удобное
                     сообщение с другими городами.
                 </li>
@@ -150,15 +150,15 @@ export const spb = {
             <p>Экологические особенности:</p>
             <ul className="list-none space-y-2 px-4">
                 <li className="relative pl-6">
-                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#0095DA]"></span>
+                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#ee1c25]"></span>
                     Более 300 мостов через реки и каналы.
                 </li>
                 <li className="relative pl-6">
-                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#0095DA]"></span>
+                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#ee1c25]"></span>
                     Большие зеленые зоны, такие как Летний сад и Парк Победы.
                 </li>
                 <li className="relative pl-6">
-                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#0095DA]"></span>
+                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#ee1c25]"></span>
                     Программы по очистке Невы и других водоемов.
                 </li>
             </ul>

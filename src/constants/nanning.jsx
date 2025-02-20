@@ -9,11 +9,11 @@ export const nanning = {
             <p>Важные вехи:</p>
             <ul className="list-none space-y-2 px-4">
                 <li className="relative pl-6">
-                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#0095DA]"></span>
+                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#ee1c25]"></span>
                     Стал столицей провинции Гуанси в 1950 году.
                 </li>
                 <li className="relative pl-6">
-                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#0095DA]"></span>С марта 1958 года — столица
+                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#ee1c25]"></span>С марта 1958 года — столица
                     Гуанси-Чжуанского автономного района.
                 </li>
             </ul>
@@ -66,11 +66,11 @@ export const nanning = {
             <p>Основные характеристики:</p>
             <ul className="list-none space-y-2 px-4">
                 <li className="relative pl-6">
-                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#0095DA]"></span>
+                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#ee1c25]"></span>
                     Среднегодовая температура: 21,5–21,8°C.
                 </li>
                 <li className="relative pl-6">
-                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#0095DA]"></span>
+                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#ee1c25]"></span>
                     Среднегодовое количество осадков: 1 453 мм (город), 1 286 мм (городская местность).
                 </li>
             </ul>
@@ -91,15 +91,15 @@ export const nanning = {
             <p>Популярные места:</p>
             <ul className="list-none space-y-2 px-4">
                 <li className="relative pl-6">
-                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#0095DA]"></span>
+                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#ee1c25]"></span>
                     Горы Цинсю и Дамин.
                 </li>
                 <li className="relative pl-6">
-                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#0095DA]"></span>
+                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#ee1c25]"></span>
                     Река Юнцзян.
                 </li>
                 <li className="relative pl-6">
-                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#0095DA]"></span>
+                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#ee1c25]"></span>
                     Парк Nanning Garden.
                 </li>
             </ul>
@@ -119,20 +119,20 @@ export const nanning = {
             <p>Транспортная инфраструктура Наньнина включает:</p>
             <ul className="list-none space-y-2 px-4">
                 <li className="relative pl-6">
-                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#0095DA]"></span>
+                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#ee1c25]"></span>
                     Разветвленную сеть автомобильных и железных дорог.
                 </li>
                 <li className="relative pl-6">
-                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#0095DA]"></span>
+                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#ee1c25]"></span>
                     Международный аэропорт Наньнин-Уксу, обслуживающий 10 миллионов пассажиров и предлагающий 195
                     маршрутов.
                 </li>
                 <li className="relative pl-6">
-                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#0095DA]"></span>
+                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#ee1c25]"></span>
                     Порт Наньнин, один из крупнейших внутренних портов Китая.
                 </li>
                 <li className="relative pl-6">
-                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#0095DA]"></span>5 линий метро общей
+                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#ee1c25]"></span>5 линий метро общей
                     протяженностью 125 километров.
                 </li>
             </ul>
@@ -147,15 +147,15 @@ export const nanning = {
             <p>Экологические показатели:</p>
             <ul className="list-none space-y-2 px-4">
                 <li className="relative pl-6">
-                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#0095DA]"></span>
+                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#ee1c25]"></span>
                     Лесистость: 43,8% (2023).
                 </li>
                 <li className="relative pl-6">
-                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#0095DA]"></span>
+                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#ee1c25]"></span>
                     Городская озеленение: 38,20–43,99%.
                 </li>
                 <li className="relative pl-6">
-                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#0095DA]"></span>
+                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#ee1c25]"></span>
                     Парковая зона на душу населения: 15,53 м².
                 </li>
             </ul>

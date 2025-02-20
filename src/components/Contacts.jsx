@@ -4,14 +4,14 @@ import Image from "next/image";
 export default function Contacts() {
     return (
         <section id="contacts" className="w-full max-w-[1200px] flex flex-col mx-auto py-12 text-lg">
-            <h2 className="text-[#0095DA] text-3xl font-bold mb-6">Контакты</h2>
+            <h2 className="text-[#ee1c25] text-3xl font-bold mb-6">Контакты</h2>
             {/* Левая половина */}
             <div className="w-full max-w-[1200px] flex text-lg ">
                 <div className="flex flex-col items-center justify-between pt-10">
                     {/* Картинка */}
                     <div className="flex flex-col items-center gap-3">
                         <Image
-                            src="/ship.svg" // Замените на путь к вашей картинке
+                            src="/ship_black.svg" // Замените на путь к вашей картинке
                             alt="Логотип"
                             width={150}
                             height={150}
@@ -82,7 +82,7 @@ export default function Contacts() {
                 </div>
                 {/* Правая половина */}
                 <div className="flex-1 mt-8 md:mt-0 md:mx-auto w-full max-w-96">
-                    <h3 className="text-[#0095DA] text-xl font-bold mb-6">Напишите нам</h3>
+                    <h3 className="text-[#ee1c25] text-xl font-bold mb-6">Напишите нам</h3>
                     <form className="space-y-4">
                         {/* Имя */}
                         <div>
@@ -94,7 +94,7 @@ export default function Contacts() {
                                 id="name"
                                 name="name"
                                 required
-                                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#0095DA] focus:border-[#0095DA]"
+                                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#ee1c25] focus:border-[#ee1c25]"
                             />
                         </div>
                         {/* Электронная почта */}
@@ -107,7 +107,7 @@ export default function Contacts() {
                                 id="email"
                                 name="email"
                                 required
-                                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#0095DA] focus:border-[#0095DA]"
+                                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#ee1c25] focus:border-[#ee1c25]"
                             />
                         </div>
                         {/* Тема обращения */}
@@ -119,7 +119,7 @@ export default function Contacts() {
                                 type="text"
                                 id="subject"
                                 name="subject"
-                                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#0095DA] focus:border-[#0095DA]"
+                                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#ee1c25] focus:border-[#ee1c25]"
                             />
                         </div>
                         {/* Сообщение */}
@@ -131,13 +131,13 @@ export default function Contacts() {
                                 id="message"
                                 name="message"
                                 rows="4"
-                                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#0095DA] focus:border-[#0095DA]"
+                                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#ee1c25] focus:border-[#ee1c25]"
                             ></textarea>
                         </div>
                         {/* Кнопка отправки */}
                         <button
                             type="submit"
-                            className="w-full bg-[#0095DA] text-white py-2 px-4 rounded-md hover:bg-[#0077b6] transition-colors"
+                            className="w-full  text-white py-2 px-4 rounded-md bg-[#ee1c25] hover:bg-[#ee1c27be] transition-colors"
                             onClick={e => e.preventDefault()}
                         >
                             Отправить

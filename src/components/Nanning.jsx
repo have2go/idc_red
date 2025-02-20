@@ -9,7 +9,10 @@ export default function Nanning() {
     const [selectedTheme, setSelectedTheme] = useState(null);
 
     return (
-        <section id="nanning" className="w-full relative flex min-h-[660px] h-full items-center flex-col text-white gap-5">
+        <section
+            id="nanning"
+            className="w-full relative flex min-h-[660px] h-full items-center flex-col text-white gap-5"
+        >
             <div className="w-full h-full max-w-[1200px] flex flex-col mx-auto py-12 text-lg">
                 <h2 className="text-3xl font-bold mb-8 drop-shadow-[0_4px_4px_rgba(0,0,0,0.7)]">
                     Наньнин, провинция Гуанси
@@ -29,7 +32,7 @@ export default function Nanning() {
                         <button
                             key={index}
                             onClick={() => setSelectedTheme(theme)}
-                            className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-4 px-8 rounded"
+                            className="bg-[#ee1c25] hover:bg-[#ee1c27be] text-white font-semibold py-4 px-8 rounded"
                         >
                             {theme}
                         </button>
