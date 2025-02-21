@@ -1,4 +1,4 @@
-import ship from "../../public/ship.svg";
+import gerb from "../../public/gerb.png"
 import flagRu from "../../public/flag_rus.png";
 import flagCh from "../../public/flag_ch.png";
 import Image from "next/image";
@@ -7,15 +7,14 @@ export default function Header() {
     return (
         <header className="w-full h-20 flex items-center bg-[#ee1c25] text-white">
             <div className="max-w-[1200px] w-full flex items-center mx-auto justify-between">
-                <div className="flex gap-3 h-16 items-center">
+                <div className="flex gap-3 items-center">
                     <Image
                         id="logo"
-                        src={ship.src}
+                        src={gerb}
                         alt=""
                         fetchPriority="high"
-                        width={64}
-                        height={60}
                         unoptimized={true}
+                        width={56}
                     />
                     <p className="leading-5 font-serif">
                         ИНФОРМАЦИОННО-ДЕЛОВОЙ

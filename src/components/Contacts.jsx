@@ -1,4 +1,5 @@
 "use client";
+import gerb from "../../public/gerb_big.png"
 import Image from "next/image";
 
 export default function Contacts() {
@@ -11,10 +12,9 @@ export default function Contacts() {
                     {/* Картинка */}
                     <div className="flex flex-col items-center gap-3">
                         <Image
-                            src="/ship_black.svg" // Замените на путь к вашей картинке
+                            src={gerb} // Замените на путь к вашей картинке
                             alt="Логотип"
-                            width={150}
-                            height={150}
+                            width={200}
                             className="mb-4"
                             unoptimized={true}
                         />
