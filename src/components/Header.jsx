@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Header() {
     return (
-        <header className="w-full h-20 flex items-center bg-[#ee1c25] text-white">
+        <header className="w-full h-20 flex items-center bg-[#ee1c25] text-white ">
             <div className="max-w-[1200px] w-full flex items-center mx-auto justify-between">
                 <div className="flex gap-3 items-center">
                     <Image
@@ -15,6 +15,7 @@ export default function Header() {
                         fetchPriority="high"
                         unoptimized={true}
                         width={56}
+                        className="bg-white p-[6px] rounded-md"
                     />
                     <p className="leading-5 font-serif">
                         ИНФОРМАЦИОННО-ДЕЛОВОЙ
@@ -25,16 +26,16 @@ export default function Header() {
                 </div>
                 <div className="flex gap-10">
                     <div className="flex gap-7 font-semibold">
-                        <a href="#about" className="">
+                        <a href="#about" className="transition-all hover:scale-105">
                             О центре
                         </a>
-                        <a href="#goals" className="">
+                        <a href="#goals" className="transition-all hover:scale-105">
                             Цели и задачи
                         </a>
-                        <a href="#nanning" className="">
+                        <a href="#nanning" className="transition-all hover:scale-105">
                             Местоположение
                         </a>
-                        <a href="#contacts" className="">
+                        <a href="#contacts" className="transition-all hover:scale-105">
                             Контакты
                         </a>
                     </div>

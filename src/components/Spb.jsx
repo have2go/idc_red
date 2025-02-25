@@ -28,7 +28,7 @@ export default function Spb() {
                         <button
                             key={index}
                             onClick={() => setSelectedTheme(theme)}
-                            className="bg-[#ee1c25] hover:bg-[#ee1c27be] text-white font-semibold py-4 px-8 rounded"
+                            className="bg-[#ee1c25] hover:bg-[#ee1c27d7] text-white font-semibold py-4 px-8 rounded transition-all"
                         >
                             {theme}
                         </button>
