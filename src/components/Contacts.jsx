@@ -1,31 +1,33 @@
 "use client";
-import gerb from "../../public/gerb_big.png"
+import gerb from "../../public/gerb_big.png";
 import Image from "next/image";
 
 export default function Contacts() {
     return (
-        <section id="contacts" className="w-full max-w-[1200px] flex flex-col mx-auto py-12 text-lg">
-            <h2 className="text-[#ee1c25] text-3xl font-bold mb-6">Контакты</h2>
-            {/* Левая половина */}
-            <div className="w-full max-w-[1200px] flex text-lg ">
-                <div className="flex flex-col items-center justify-between pt-10">
+        <section
+            id="contacts"
+            className="w-full max-w-[1200px] flex flex-col mx-auto px-2 xs:px-4 py-5 xs:py-7 text-sm xl:pt-12 xl:pb-16 xl:text-lg"
+        >
+            <h2 className="text-[#ee1c25] text-2xl xl:text-3xl font-bold mb-2 xl:mb-6">Контакты</h2>
+            {/* Основной контейнер */}
+            <div className="flex flex-col sm:flex-row justify-between gap-8">
+                {/* Левая половина (картинка и подпись) */}
+                <div className="w-full sm:w-1/2 flex flex-col items-center sm:items-start gap-3">
                     {/* Картинка */}
-                    <div className="flex flex-col items-center gap-3">
-                        <Image
-                            src={gerb} // Замените на путь к вашей картинке
-                            alt="Логотип"
-                            width={200}
-                            className="mb-4"
-                            unoptimized={true}
-                        />
-                        {/* Подпись */}
-                        <p className="font-serif leading-6">
-                            ИНФОРМАЦИОННО-ДЕЛОВОЙ
-                            <br />
-                            ЦЕНТР САНКТ-ПЕТЕРБУРГА
-                            <br />В КИТАЕ
-                        </p>
-                    </div>
+                    <Image
+                        src={gerb} // Замените на путь к вашей картинке
+                        alt="Логотип"
+                        width={200}
+                        className="mb-4"
+                        unoptimized={true}
+                    />
+                    {/* Подпись */}
+                    <p className="font-serif leading-6 text-center sm:text-left">
+                        ИНФОРМАЦИОННО-ДЕЛОВОЙ
+                        <br />
+                        ЦЕНТР САНКТ-ПЕТЕРБУРГА
+                        <br />В КИТАЕ
+                    </p>
 
                     {/* Контакты */}
                     <div className="mt-8 space-y-4">
@@ -80,8 +82,9 @@ export default function Contacts() {
                         </div>
                     </div>
                 </div>
-                {/* Правая половина */}
-                <div className="flex-1 mt-8 md:mt-0 md:mx-auto w-full max-w-96">
+
+                {/* Правая половина (форма) */}
+                <div className="w-full sm:w-1/2">
                     <h3 className="text-[#ee1c25] text-xl font-bold mb-6">Напишите нам</h3>
                     <form className="space-y-4">
                         {/* Имя */}
@@ -137,7 +140,7 @@ export default function Contacts() {
                         {/* Кнопка отправки */}
                         <button
                             type="submit"
-                            className="w-full  text-white py-2 px-4 rounded-md bg-[#ee1c25] hover:bg-[#ee1c27be] transition-colors"
+                            className="w-full text-white py-2 px-4 rounded-md bg-[#ee1c25] hover:bg-[#ee1c27be] transition-colors"
                             onClick={e => e.preventDefault()}
                         >
                             Отправить
