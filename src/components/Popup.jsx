@@ -1,4 +1,4 @@
-export default function Popup({ city, theme, onClose }) {
+export default function Popup({ city, theme, onClose, isVisible }) {
     const content = city[theme];
 
     return (
@@ -8,11 +8,13 @@ export default function Popup({ city, theme, onClose }) {
         >
             {/* Внутренний контейнер попапа */}
             <div
-                className="bg-white rounded-lg shadow-lg max-w-[90%] sm:max-w-[600px] text-center relative text-black mx-auto overflow-y-auto max-h-[80vh] pb-3 sm:pt-3 sm:pb-7"
+                className={`popup-content bg-white rounded-lg shadow-lg max-w-[90%] sm:max-w-[600px] text-center relative text-black mx-auto overflow-y-auto max-h-[80vh] pb-3 sm:pt-3 sm:pb-7 ${
+                    isVisible ? "active" : ""
+                }`}
                 onClick={e => e.stopPropagation()}
             >
                 {/* Заголовок */}
-                <h3 className="text-xl sm:text-2xl font-bold  text-[#ee1c25] sticky top-0 bg-white p-3 z-10">
+                <h3 className="text-xl sm:text-2xl font-bold text-[#ee1c25] sticky top-0 bg-white p-3 z-10">
                     {theme}
                     {/* Кнопка закрытия */}
                     <button

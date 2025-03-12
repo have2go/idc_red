@@ -1,17 +1,20 @@
 "use client";
-import Image from "next/image";
 import spbBg from "../../public/nanning-bg.png";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { nanning } from "@/constants/nanning";
 import Popup from "./Popup";
 
 export default function Nanning() {
     const [selectedTheme, setSelectedTheme] = useState(null);
-    
+    const [isPopupVisible, setIsPopupVisible] = useState(false); // Новое состояние для видимости попапа
+
     useEffect(() => {
         if (selectedTheme) {
             document.body.style.overflow = "hidden"; // Блокируем скролл
+            setIsPopupVisible(true); // Показываем попап
         } else {
+            setIsPopupVisible(false); // Скрываем попап
             document.body.style.overflow = ""; // Разблокируем скролл
         }
 
@@ -64,7 +67,14 @@ export default function Nanning() {
                 unoptimized={true}
             />
             <div className="bg-black absolute top-0 left-0 w-full h-full opacity-70 -z-10"></div>
-            {selectedTheme && <Popup city={nanning} theme={selectedTheme} onClose={() => setSelectedTheme(null)} />}
+            {selectedTheme && (
+                <Popup
+                    city={nanning}
+                    theme={selectedTheme}
+                    onClose={() => setSelectedTheme(null)}
+                    isVisible={isPopupVisible} // Передаем состояние видимости
+                />
+            )}
         </section>
     );
 }

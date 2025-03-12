@@ -1,8 +1,41 @@
 "use client";
+import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 import gerb from "../../public/gerb_big.png";
 import Image from "next/image";
 
 export default function Contacts() {
+    const [buttonStatus, setButtonStatus] = useState(null); // Состояние кнопки: null, 'success', 'error', 'loading'
+    const form = useRef(); // Добавляем ref для формы
+
+    const handleSubmit = async e => {
+        e.preventDefault(); // Предотвращаем обновление страницы
+        setButtonStatus("loading"); // Устанавливаем статус загрузки
+
+        try {
+            // Отправляем форму через EmailJS
+            await emailjs.sendForm(
+                "service_nym08x5", // Замените на ваш Service ID
+                "template_7m7ix4u", // Замените на ваш Template ID
+                form.current, // Передаем форму
+                {
+                    publicKey: "81prC8--TDUXDmNKR", // Замените на ваш Public Key
+                }
+            );
+
+            setButtonStatus("success"); // Устанавливаем статус успеха
+            form.current.reset(); // Очищаем форму
+        } catch (error) {
+            console.error("Ошибка при отправке:", error);
+            setButtonStatus("error"); // Устанавливаем статус ошибки
+        }
+
+        // Через 3 секунды сбрасываем статус кнопки
+        setTimeout(() => {
+            setButtonStatus(null);
+        }, 3000);
+    };
+
     return (
         <section
             id="contacts"
@@ -28,7 +61,6 @@ export default function Contacts() {
                         ЦЕНТР САНКТ-ПЕТЕРБУРГА
                         <br />В КИТАЕ
                     </p>
-
                     {/* Контакты */}
                     <div className="mt-8 space-y-4">
                         {/* Телефон */}
@@ -55,7 +87,7 @@ export default function Contacts() {
                             >
                                 <path d="M24 21h-24v-18h24v18zm-23-16.477v15.477h22v-15.477l-10.999 10-11.001-10zm21.089-.523h-20.176l10.088 9.171 10.088-9.171z" />
                             </svg>
-                            <span>info@example.com</span>
+                            <span>info@ibc-cn.cn.com</span>
                         </div>
                         {/* Адрес */}
                         <div className="flex items-center gap-2">
@@ -82,11 +114,10 @@ export default function Contacts() {
                         </div>
                     </div>
                 </div>
-
                 {/* Правая половина (форма) */}
-                <div className="w-full sm:w-1/2">
+                <div className="w-full sm:w-1/2 max-w-[400px] mx-auto lg:ml-0">
                     <h3 className="text-[#ee1c25] text-xl font-bold mb-6">Напишите нам</h3>
-                    <form className="space-y-4">
+                    <form ref={form} onSubmit={handleSubmit} className="space-y-4 ">
                         {/* Имя */}
                         <div>
                             <label htmlFor="name" className="block text-sm font-medium text-gray-700">
@@ -140,10 +171,48 @@ export default function Contacts() {
                         {/* Кнопка отправки */}
                         <button
                             type="submit"
-                            className="w-full text-white py-2 px-4 rounded-md bg-[#ee1c25] hover:bg-[#ee1c27be] transition-colors"
-                            onClick={e => e.preventDefault()}
+                            disabled={buttonStatus === "loading"} // Блокируем кнопку при загрузке
+                            className={`w-full py-2 px-4 rounded-md transition-colors ${
+                                buttonStatus === "success"
+                                    ? "bg-green-600 text-white"
+                                    : buttonStatus === "error"
+                                    ? "bg-red-600 text-white"
+                                    : buttonStatus === "loading"
+                                    ? "bg-[#ee1c25] text-white cursor-not-allowed"
+                                    : "bg-[#ee1c25] hover:bg-[#ee1c27be] text-white"
+                            }`}
                         >
-                            Отправить
+                            {buttonStatus === "success" ? (
+                                "Отправлено!"
+                            ) : buttonStatus === "error" ? (
+                                "Ошибка"
+                            ) : buttonStatus === "loading" ? (
+                                <div className="flex items-center justify-center">
+                                    <svg
+                                        className="animate-spin h-5 w-5 mr-2 text-white"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <circle
+                                            className="opacity-25"
+                                            cx="12"
+                                            cy="12"
+                                            r="10"
+                                            stroke="currentColor"
+                                            strokeWidth="4"
+                                        ></circle>
+                                        <path
+                                            className="opacity-75"
+                                            fill="currentColor"
+                                            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                                        ></path>
+                                    </svg>
+                                    Отправка...
+                                </div>
+                            ) : (
+                                "Отправить"
+                            )}
                         </button>
                     </form>
                 </div>
