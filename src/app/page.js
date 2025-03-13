@@ -4,9 +4,10 @@ import Header from "@/components/Header";
 import Main from "@/components/Main";
 import Spb from "@/components/Spb";
 import Nanning from "@/components/Nanning";
-import Image from "next/image";
 import Contacts from "@/components/Contacts";
 import Footer from "@/components/Footer";
+import Qingdao from "@/components/Qingdao";
+import Spacer from "@/components/Spacer";
 
 export default function Home() {
     return (
@@ -15,6 +16,8 @@ export default function Home() {
             <Main />
             <About />
             <Nanning />
+            <Spacer />
+            <Qingdao />
             <Goals />
             <Spb />
             <Contacts />

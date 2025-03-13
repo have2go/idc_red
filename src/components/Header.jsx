@@ -41,7 +41,7 @@ export default function Header() {
                             href="#about"
                             className="transition-all hover:scale-105"
                         >
-                            О центре
+                            О нас
                         </a>
                         <a
                             href="#goals"
@@ -53,7 +53,7 @@ export default function Header() {
                             href="#nanning"
                             className="transition-all hover:scale-105"
                         >
-                            Местоположение
+                            О центрах
                         </a>
                         <a
                             href="#contacts"
