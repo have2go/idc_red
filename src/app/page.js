@@ -15,11 +15,11 @@ export default function Home() {
             <Header />
             <Main />
             <About />
+            <Spb />
+            <Goals />
             <Nanning />
             <Spacer />
             <Qingdao />
-            <Goals />
-            <Spb />
             <Contacts />
             <Footer />
         </>
