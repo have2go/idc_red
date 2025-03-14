@@ -25,9 +25,9 @@ export default function Header() {
                         className="bg-white p-[8px] rounded-md w-[50px] h-[50px] sm:w-[60px] sm:h-[60px]"
                     />
                     <p className="leading-4 font-serif hidden text-lg lg:text-base lg:leading-5 sm:text-sm sm:block">
-                        ИНФОРМАЦИОННО-ДЕЛОВОЙ
+                        ИНФОРМАЦИОННО-ДЕЛОВЫЕ
                         <br className="" />
-                        ЦЕНТР САНКТ-ПЕТЕРБУРГА
+                        ЦЕНТРЫ САНКТ-ПЕТЕРБУРГА
                         <br className="" />
                         В КИТАЕ
                     </p>

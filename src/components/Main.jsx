@@ -5,7 +5,7 @@ export default function Main() {
     return (
         <section id="main" className="w-full pt-20 relative flex h-screen xs:max-h-[660px] justify-center items-center flex-col text-white font-bold gap-5">
             <h1 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl text-center drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
-                ИНФОРМАЦИОННО-ДЕЛОВОЙ ЦЕНТР
+                ИНФОРМАЦИОННО-ДЕЛОВЫЕ ЦЕНТРЫ
                 <br />
                 САНКТ-ПЕТЕРБУРГА В КИТАЕ
             </h1>
