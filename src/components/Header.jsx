@@ -13,7 +13,7 @@ export default function Header() {
         <header className="w-full h-16 sm:h-20 flex items-center bg-[#ee1c25] text-white fixed z-50">
             <div className="max-w-[1200px] w-full flex items-center mx-auto justify-between px-2 xs:px-4 lg:px-6">
                 {/* Левая часть: логотип и текст */}
-                <div className="flex gap-2 lg:gap-6 items-center">
+                <div className="flex gap-2 lg:gap-4 items-center">
                     <Image
                         id="logo"
                         src={gerb}
@@ -24,7 +24,7 @@ export default function Header() {
                         height={70}
                         className="bg-white p-[8px] rounded-md w-[50px] h-[50px] sm:w-[60px] sm:h-[60px]"
                     />
-                    <p className="leading-4 font-serif hidden text-lg lg:text-base lg:leading-5 sm:text-sm sm:block">
+                    <p className="leading-4 hidden text-lg lg:text-base lg:leading-5 sm:text-sm sm:block">
                         ИНФОРМАЦИОННО-ДЕЛОВОЙ
                         <br className="" />
                         ЦЕНТР САНКТ-ПЕТЕРБУРГА

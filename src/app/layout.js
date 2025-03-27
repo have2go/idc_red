@@ -18,7 +18,7 @@ const roboto = Roboto({
 });
 
 export const metadata = {
-    title: "ИДЦ",
+    title: "ИДЦ СПб в Наньнине",
     description: "ИНФОРМАЦИОННО-ДЕЛОВОЙ ЦЕНТР САНКТ-ПЕТЕРБУРГА В КИТАЕ",
 };
 
