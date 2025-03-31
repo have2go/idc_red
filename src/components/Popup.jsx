@@ -1,5 +1,7 @@
-export default function Popup({ city, theme, onClose, isVisible }) {
-    const content = city[theme];
+export default function Popup({ theme, translations, onClose }) {
+    if (!translations) {
+        return null; // Если данные не найдены, ничего не отображаем
+    }
 
     return (
         <div
@@ -8,9 +10,7 @@ export default function Popup({ city, theme, onClose, isVisible }) {
         >
             {/* Внутренний контейнер попапа */}
             <div
-                className={`popup-content bg-white rounded-lg shadow-lg max-w-[90%] sm:max-w-[600px] text-center relative text-black mx-auto overflow-y-auto max-h-[80vh] pb-3 sm:pt-3 sm:pb-7 ${
-                    isVisible ? "active" : ""
-                }`}
+                className="popup-content bg-white rounded-lg shadow-lg max-w-[90%] sm:max-w-[600px] text-center relative text-black mx-auto overflow-y-auto max-h-[80vh] pb-3 sm:pt-3 sm:pb-7"
                 onClick={e => e.stopPropagation()}
             >
                 {/* Заголовок */}
@@ -26,7 +26,21 @@ export default function Popup({ city, theme, onClose, isVisible }) {
                 </h3>
 
                 {/* Контент */}
-                <div className="flex flex-col text-left gap-3 text-base sm:text-lg px-4 sm:px-10">{content}</div>
+                <div className="flex flex-col text-left gap-3 text-base sm:text-lg px-4 sm:px-10">
+                    <p>{translations.p1}</p>
+                    {translations.p2 && <p>{translations.p2}</p>}
+                    {translations.list && (
+                        <ul className="list-none space-y-2 pl-4">
+                            {translations.list.map((item, index) => (
+                                <li key={index} className="relative pl-6">
+                                    <span className="absolute left-0 top-2 w-2.5 h-2.5 bg-[#ee1c25]"></span>
+                                    {item}
+                                </li>
+                            ))}
+                        </ul>
+                    )}
+                    {translations.p3 && <p>{translations.p3}</p>}
+                </div>
             </div>
         </div>
     );

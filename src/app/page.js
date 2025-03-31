@@ -8,6 +8,7 @@ import Spb from "@/components/Spb";
 import Nanning from "@/components/Nanning";
 import Contacts from "@/components/Contacts";
 import Footer from "@/components/Footer";
+import Partners from "@/components/Partners";
 
 export default function Home() {
     useEffect(() => {
@@ -61,6 +62,7 @@ export default function Home() {
             <Spb />
             <Goals />
             <Nanning />
+            <Partners />
             <Contacts />
             <Footer />
         </>

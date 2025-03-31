@@ -32,18 +32,6 @@ section {
     box-shadow: 0 4px 10px 1px rgba(0, 0, 0, 0.4), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
 }
 
-/* Базовые стили для попапа */
-.popup-content {
-    opacity: 0;
-    transform: scale(0.9);
-    transition: all 0.3s ease-in-out;
-}
-
-/* Активное состояние попапа */
-.popup-content.active {
-    opacity: 1;
-    transform: scale(1);
-}
 .allow-select {
     user-select: text !important;
     -webkit-user-select: text !important; /* Safari */

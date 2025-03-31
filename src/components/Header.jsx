@@ -5,9 +5,14 @@ import flagCh from "../../public/flag_ch.png";
 import Image from "next/image";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslations } from "@/hooks/useTranslations";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const t = useTranslations();
+    const { setLanguage } = useLanguage();
 
     return (
         <header className="w-full h-16 sm:h-20 flex items-center bg-[#ee1c25] text-white fixed z-50">
@@ -22,44 +27,32 @@ export default function Header() {
                         unoptimized={true}
                         width={70} // Исходный размер для десктопа
                         height={70}
-                        className="bg-white p-[8px] rounded-md w-[50px] h-[50px] sm:w-[60px] sm:h-[60px]"
+                        className="bg-white p-[8px] rounded-md w-[50px] h-[50px] lg:w-[60px] lg:h-[60px]"
                     />
-                    <p className="leading-4 hidden text-lg lg:text-base lg:leading-5 sm:text-sm sm:block">
-                        ИНФОРМАЦИОННО-ДЕЛОВОЙ
-                        <br className="" />
-                        ЦЕНТР САНКТ-ПЕТЕРБУРГА
-                        <br className="" />
-                        В КИТАЕ
-                    </p>
+                    <p
+                        className="leading-4 hidden text-lg lg:text-base lg:leading-5 sm:text-xs sm:block"
+                        dangerouslySetInnerHTML={{ __html: t?.header?.title }}
+                    />
                 </div>
 
                 {/* Правая часть: навигация и флаги */}
-                <div className="flex gap-4 items-center">
+                <div className="flex gap-2 items-center">
                     {/* Навигация для больших экранов */}
-                    <div className="hidden md:flex gap-2 lg:gap-6 lg:pr-4 font-semibold text-base lg:text-lg md:text-sm">
-                        <a
-                            href="#about"
-                            className="transition-all hover:scale-105"
-                        >
-                            О центре
+                    <div className="hidden md:flex gap-2 lg:gap-6 lg:pr-4 font-semibold text-base lg:text-base md:text-sm">
+                        <a href="#about" className="transition-all hover:scale-105">
+                            {t?.header?.about}
                         </a>
-                        <a
-                            href="#goals"
-                            className="transition-all hover:scale-105"
-                        >
-                            Цели и задачи
+                        <a href="#goals" className="transition-all hover:scale-105">
+                            {t?.header?.goals}
                         </a>
-                        <a
-                            href="#nanning"
-                            className="transition-all hover:scale-105"
-                        >
-                            Местоположение
+                        <a href="#nanning" className="transition-all hover:scale-105">
+                            {t?.header?.location}
                         </a>
-                        <a
-                            href="#contacts"
-                            className="transition-all hover:scale-105"
-                        >
-                            Контакты
+                        <a href="#contacts" className="transition-all hover:scale-105">
+                            {t?.header?.contacts}
+                        </a>
+                        <a href="#partners" className="transition-all hover:scale-105">
+                            {t?.header?.partners}
                         </a>
                     </div>
 
@@ -69,6 +62,9 @@ export default function Header() {
                             src={flagRu}
                             alt="Русский язык"
                             className="border border-gray-300 cursor-pointer w-6 h-auto"
+                            onClick={() => {
+                                setLanguage("ru");
+                            }}
                             width={32}
                             height={20}
                             unoptimized={true}
@@ -76,7 +72,10 @@ export default function Header() {
                         <Image
                             src={flagCh}
                             alt="Китайский язык"
-                            className="border border-gray-300 opacity-30 cursor-not-allowed w-6 h-auto"
+                            className="border border-gray-300 cursor-pointer w-6 h-auto"
+                            onClick={() => {
+                                setLanguage("zh");
+                            }}
                             width={32}
                             height={20}
                             unoptimized={true}
@@ -95,7 +94,12 @@ export default function Header() {
                             viewBox="0 0 24 24"
                             stroke="currentColor"
                         >
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                            <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M4 6h16M4 12h16M4 18h16"
+                            />
                         </svg>
                     </button>
 
@@ -124,28 +128,35 @@ export default function Header() {
                                         className="block w-fit mx-auto px-4 py-2 transition-all hover:scale-105"
                                         onClick={() => setIsMenuOpen(false)} // Закрыть меню после клика
                                     >
-                                        О центре
+                                        {t?.header?.about}
                                     </a>
                                     <a
                                         href="#goals"
                                         className="block w-fit mx-auto px-4 py-2 transition-all hover:scale-105"
                                         onClick={() => setIsMenuOpen(false)}
                                     >
-                                        Цели и задачи
+                                        {t?.header?.goals}
                                     </a>
                                     <a
                                         href="#nanning"
                                         className="block w-fit mx-auto px-4 py-2 transition-all hover:scale-105"
                                         onClick={() => setIsMenuOpen(false)}
                                     >
-                                        Местоположение
+                                        {t?.header?.location}
                                     </a>
                                     <a
                                         href="#contacts"
                                         className="block w-fit mx-auto px-4 py-2 transition-all hover:scale-105"
                                         onClick={() => setIsMenuOpen(false)}
                                     >
-                                        Контакты
+                                        {t?.header?.contacts}
+                                    </a>
+                                    <a
+                                        href="#partners"
+                                        className="block w-fit mx-auto px-4 py-2 transition-all hover:scale-105"
+                                        onClick={() => setIsMenuOpen(false)}
+                                    >
+                                        {t?.header?.partners}
                                     </a>
                                 </motion.div>
                             </motion.div>
