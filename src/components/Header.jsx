@@ -51,9 +51,9 @@ export default function Header() {
                         <a href="#contacts" className="transition-all hover:scale-105">
                             {t?.header?.contacts}
                         </a>
-                        <a href="#partners" className="transition-all hover:scale-105">
+                        <span className="opacity-85 cursor-default">
                             {t?.header?.partners}
-                        </a>
+                        </span>
                     </div>
 
                     {/* Флаги */}
@@ -151,13 +151,11 @@ export default function Header() {
                                     >
                                         {t?.header?.contacts}
                                     </a>
-                                    <a
-                                        href="#partners"
-                                        className="block w-fit mx-auto px-4 py-2 transition-all hover:scale-105"
-                                        onClick={() => setIsMenuOpen(false)}
+                                    <span
+                                        className="block w-fit mx-auto px-4 py-2 cursor-default opacity-85"
                                     >
                                         {t?.header?.partners}
-                                    </a>
+                                    </span>
                                 </motion.div>
                             </motion.div>
                         )}

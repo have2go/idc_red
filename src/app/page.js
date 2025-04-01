@@ -62,7 +62,7 @@ export default function Home() {
             <Spb />
             <Goals />
             <Nanning />
-            <Partners />
+            {/*<Partners />*/}
             <Contacts />
             <Footer />
         </>
